@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '$lib/Navbar.svelte';
+	import Navbar from '../components/Navbar.svelte';
 
 	import Icon from '@iconify/svelte';
 
@@ -28,7 +28,7 @@
 		! I'm <span class="name">Seng Rith</span>.
 	</h1>
 	<div class="body">
-		<div>
+		<div class="container">
 			<p>
 				I am a Master's student at the <span class="highlight">University of Utah</span>. I am
 				studying <span class="brighten">Computer Science</span> with focus on
@@ -47,28 +47,26 @@
 			<p>
 				Let's connect and share our stories. I'm always open to new experiences and opportunities.
 			</p>
-
-			<div class="contact-list">
-				<div class="contact-row">
-					<div class="contact-item">
-						<Icon icon="mdi:github"  style="font-size: 28px;" />
-						<a href="https://github.com/senghorn" target="_blank"> senghorn </a>
-					</div>
-					<div class="contact-item">
-						<Icon icon="mdi:email"  style="font-size: 28px; color: #00D1FF" />
-						<a href="mailto:sun_rsh@outlook.com" target="_blank"> sun_rsh </a>
-					</div>
-				</div>
-				<div class="contact-row">
-					<div class="contact-item">
-						<Icon icon="mdi:linkedin"  style="font-size: 28px; color: #3D6CB9" />
-						<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank"> Seng Horn </a>
-					</div>
-				</div>
-			</div>
 		</div>
-		<div>
+		<div class="container">
 			<img src="portrait.jpg" alt="Your Name" />
+		</div>
+	</div>
+	<div class="grid-contact-container">
+		<div class="grid-item">
+			<Icon icon="mdi:github" style="font-size: 28px;" />
+			<a href="https://github.com/senghorn" target="_blank"> senghorn </a>
+		</div>
+		<div class="grid-item">
+			<Icon icon="mdi:email" style="font-size: 28px; color: #00D1FF" />
+			<a href="mailto:sun_rsh@outlook.com" target="_blank"> sun_rsh </a>
+		</div>
+
+		<div class="grid-item">
+			<Icon icon="mdi:linkedin" style="font-size: 28px; color: #3D6CB9" />
+			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank">
+				Seng Horn
+			</a>
 		</div>
 	</div>
 </div>
@@ -77,13 +75,18 @@
 	div {
 		text-align: center;
 		max-width: 800px;
-		margin: 0 auto;
+		margin: auto;
 	}
 	img {
 		max-width: 350px;
 		max-height: 550px;
 		border-radius: 2%;
-		margin: 1rem;
+		margin: auto;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 	.name {
 		color: var(--accent-color);
@@ -104,31 +107,6 @@
 		color: var(--secondary-color);
 	}
 
-	.contact-list {
-		display: flex;
-		flex-direction: row;
-		padding: 1rem;
-		border-radius: 10px;
-		border: 4px solid var(--accent-color);
-	}
-
-	.contact-row {
-		display: flex;
-		flex-direction: column;
-	}
-
-	/* Style for anchoring tags in contact-list */
-	.contact-list a {
-		color: var(--font-color);
-		font-size: 20px;
-	}
-
-	.contact-item {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-	}
-
 	.main {
 		margin-bottom: 8rem;
 	}
@@ -137,13 +115,36 @@
 		display: flex;
 		flex-direction: row;
 		place-items: center;
+		padding: 2rem;
 	}
-
-	.body > *:first-child {
+	.grid-contact-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		border: 4px solid var(--accent-color);
+		padding: 1rem;
+		margin-top: 1rem;
+	}
+	.grid-item {
+		display: flex;
+		justify-content: center;
 		margin-right: 1rem;
 	}
 
-	.body > *:last-child {
-		margin-left: 1rem;
+	/* Style for anchoring tags in contact-list */
+	.grid-item a {
+		color: var(--font-color);
+		font-size: 20px;
+	}
+
+	@media (max-width: 800px) {
+		.body {
+			flex-direction: column;
+		}
+		img {
+			max-width: 300px;
+			max-height: 400px;
+			border-radius: 2%;
+			margin: auto;
+		}
 	}
 </style>
