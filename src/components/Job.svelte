@@ -34,7 +34,7 @@
 	}
 
 	.tech-list {
-		background-color: var(--primary-color);
+		background-color: var(--light-red-color);
 		border-radius: 1rem;
 		padding: 0 8px;
 		margin: 0 0 1rem 0;

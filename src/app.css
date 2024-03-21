@@ -6,8 +6,10 @@
     --accent-color: #ffd700;
     --primary-color: #FF6B6B;
     --secondary-color: #C7C8CC;
+    --light-red-color: #bb979b;
+    --light-black-color: #31363F;
 }
-  
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);

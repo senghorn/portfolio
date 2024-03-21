@@ -1,6 +1,4 @@
 <script>
-	import Navbar from '../components/Navbar.svelte';
-
 	import Icon from '@iconify/svelte';
 
 	let greeting = 'Sur Sdey';
@@ -13,19 +11,19 @@
 	}
 </script>
 
-<Navbar />
-
 <div class="main">
 	<h1>
-		🙏 <span
+		<span
 			tabindex="0"
 			role="button"
 			on:mouseenter={showTranslation}
 			on:mouseleave={hideTranslation}
 			on:focus={showTranslation}
-			on:blur={hideTranslation}>{greeting}</span
+			on:blur={hideTranslation}>🙏 {greeting} !</span
 		>
-		! I'm <span class="name">Seng Rith</span>.
+		<span>
+			I'm <span class="name">Seng Rith</span>.
+		</span>
 	</h1>
 	<div class="body">
 		<div class="container">
@@ -61,11 +59,10 @@
 			<Icon icon="mdi:email" style="font-size: 28px; color: #00D1FF" />
 			<a href="mailto:sun_rsh@outlook.com" target="_blank"> sun_rsh </a>
 		</div>
-
 		<div class="grid-item">
 			<Icon icon="mdi:linkedin" style="font-size: 28px; color: #3D6CB9" />
 			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank">
-				Seng Horn
+				senghorn
 			</a>
 		</div>
 	</div>
@@ -74,7 +71,7 @@
 <style>
 	div {
 		text-align: center;
-		max-width: 800px;
+		max-width: 1000px;
 		margin: auto;
 	}
 	img {
@@ -90,7 +87,7 @@
 	}
 	.name {
 		color: var(--accent-color);
-		text-decoration: underline;
+
 	}
 
 	.highlight {
@@ -116,6 +113,7 @@
 		flex-direction: row;
 		place-items: center;
 		padding: 2rem;
+		gap: 4rem;
 	}
 	.grid-contact-container {
 		display: grid;
@@ -126,8 +124,7 @@
 	}
 	.grid-item {
 		display: flex;
-		justify-content: center;
-		margin-right: 1rem;
+		text-align: center;
 	}
 
 	/* Style for anchoring tags in contact-list */
@@ -141,10 +138,21 @@
 			flex-direction: column;
 		}
 		img {
-			max-width: 300px;
+			max-width: 250px;
 			max-height: 400px;
 			border-radius: 2%;
 			margin: auto;
+		}
+		.grid-contact-container {
+			grid-template-columns: auto auto;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		h1 {
+			font-size: 24px;
 		}
 	}
 </style>
