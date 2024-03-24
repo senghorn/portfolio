@@ -36,33 +36,12 @@
 				tagName={blog.tag}
 				title={blog.title}
 				description={blog.description}
-				userImageUrl="https://i.pravatar.cc/40?img=2"
+				userImageUrl="seng.jpg"
 				userName={blog.author}
 				timeAgo={blog.timeAgo}
+				slug={blog.slug}
 			/>
 		{/each}
-		<Card
-			cardImageUrl="https://source.unsplash.com/600x400/?food"
-			altText="Food image"
-			tagColor="brown"
-			tagName="Food"
-			title="Delicious Food"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!"
-			userImageUrl="https://i.pravatar.cc/40?img=2"
-			userName="Jony Doe"
-			timeAgo="Yesterday"
-		/>
-		<Card
-			cardImageUrl="https://source.unsplash.com/600x400/?car,automobile"
-			altText="Car image"
-			tagColor="red"
-			tagName="Automobile"
-			title="Race to your heart content"
-			description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!"
-			userImageUrl="https://i.pravatar.cc/40?img=3"
-			userName="John Doe"
-			timeAgo="2d ago"
-		/>
 	</div>
 </div>
 

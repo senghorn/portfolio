@@ -5,13 +5,13 @@
 	export let tagName = 'Technology';
 	export let title = "What's new in 2022 Tech";
 	export let description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
-	export let userImageUrl = 'https://i.pravatar.cc/40?img=1';
+	export let userImageUrl = 'seng.jpg';
 	export let userName = 'Jane Doe';
 	export let timeAgo = '2h ago';
-	export let id = 1;
+	export let slug = "";
 
 	function navigateToBlogPost() {
-		window.location.href = `/blog/${id}`;
+		window.location.href = `/blog/${slug}`;
 	}
 </script>
 
@@ -22,13 +22,13 @@
 	</div>
 	<div class="card__body">
 		<span class={`tag tag-${tagColor}`}>{tagName}</span>
-		<h4><a href="/blog/one">{title}</a></h4>
+		<h4><a href="/blog/{slug}">{title}</a></h4>
 		<p>{description}</p>
 	</div>
 	<div class="card__footer">
 		<div class="user">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img alt="user image" class="user__image" src={userImageUrl} />
+			<img alt="user image" class="user__image" src={userImageUrl} width="40" height="40"/>
 			<div class="user__info">
 				<h5>{userName}</h5>
 				<small>{timeAgo}</small>

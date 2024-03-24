@@ -17,7 +17,7 @@ export const getAllBlogs = async () => {
 					const { data } = matter(fileContent);
 
 					const timeAgo = formatDistanceToNow(new Date(data.date), { addSuffix: true });
-
+		
 					const blog: BlogMetaData = {
 						title: data.title,
 						description: data.description,
@@ -40,7 +40,12 @@ export const getAllBlogs = async () => {
 	}
 };
 
-export const timeAgo = (date: string) => {
-	const result = formatDistanceToNow(new Date(date), { addSuffix: true });
-	return result;
-};
+export const getBlog = async (slug: string) => {
+	const directoryPath = path.resolve('src', 'resources', 'blogs', slug);
+	try {
+		const files = await fs.readdir(directoryPath);
+	} catch (error){
+		console.error(error);
+		return null;
+	}
+}
