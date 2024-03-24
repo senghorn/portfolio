@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
 	import Card from '../../components/Blog/Card.svelte';
+	export let data;
 </script>
 
 <svelte:head>
@@ -9,32 +10,37 @@
 		content="Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I hope you enjoy reading them as much as I enjoyed writing them."
 	/>
 	<meta property="og:title" content="Blog - Seng Rith" />
-	<meta property="og:description" content="Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I hope you enjoy reading them as much as I enjoyed writing them." />
+	<meta
+		property="og:description"
+		content="Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I hope you enjoy reading them as much as I enjoyed writing them."
+	/>
 	<meta property="og:image" content="" />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="main">
 	<h1>📝 Blog</h1>
-	<br>
+	<br />
 	<div>
 		<p>
-			Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I hope you enjoy reading them as much as I enjoyed writing them.
+			Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I
+			hope you enjoy reading them as much as I enjoyed writing them.
 		</p>
 	</div>
-
 	<div class="container">
-		<Card
-			cardImageUrl="https://source.unsplash.com/600x400/?nature"
-			altText="Nature image"
-			tagColor="blue"
-			tagName="Technology"
-			title="Exploring Nature With Technology"
-			description="Discover the beauty and serenity of nature through deep learning."
-			userImageUrl="https://i.pravatar.cc/40?img=2"
-			userName="John Doe"
-			timeAgo="3h ago"
-		/>
+		{#each data.blogs as blog}
+			<Card
+				cardImageUrl={blog.imageUrl}
+				altText="Nature image"
+				tagColor={blog.tagColor}
+				tagName={blog.tag}
+				title={blog.title}
+				description={blog.description}
+				userImageUrl="https://i.pravatar.cc/40?img=2"
+				userName={blog.author}
+				timeAgo={blog.timeAgo}
+			/>
+		{/each}
 		<Card
 			cardImageUrl="https://source.unsplash.com/600x400/?food"
 			altText="Food image"
@@ -82,5 +88,4 @@
 		max-width: 1200px;
 		margin: 0 auto;
 	}
-
 </style>

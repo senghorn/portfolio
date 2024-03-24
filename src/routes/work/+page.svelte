@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Navbar from '../../components/Navbar.svelte';
 	import type { JobType } from '$lib/types';
 	import Job from '../../components/Job.svelte';
 

@@ -18,7 +18,7 @@
 
 <div class="card">
 	<div class="card__header">
-		<img src={cardImageUrl} alt={altText} class="card__image" width="600" />
+		<img src={cardImageUrl} alt={altText} class="card__image" width="600" height="200"/>
 	</div>
 	<div class="card__body">
 		<span class={`tag tag-${tagColor}`}>{tagName}</span>
