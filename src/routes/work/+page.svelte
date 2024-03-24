@@ -25,6 +25,20 @@
 			]
 		}
 	];
+
+	const projects: JobType[] = [
+		{
+			companyName: 'CareCoord',
+			companyLogo: 'carecoord.png',
+			jobPeriod: 'August 2022-May 2023',
+			techList: 'ReactNative, Node.js, Express.js, MySQL, Docker',
+			jobDescription: [
+				'Built real-time group messaging feature',
+				'Implemented user authentication flow in both frontend and backend',
+				'Coordinate with team to put together full-stack mobile application'
+			]
+		}
+	];
 </script>
 
 <svelte:head>
@@ -37,6 +51,12 @@
 	<div class="job-list">
 		{#each jobs as job}
 			<Job job={job}/>
+		{/each}
+	</div>
+	<h1>👷🏻‍♂️ Project</h1>
+	<div class="job-list">
+		{#each projects as proj}
+			<Job job={proj}/>
 		{/each}
 	</div>
 </div>

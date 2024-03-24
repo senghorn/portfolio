@@ -36,10 +36,10 @@
 			</p>
 
 			<p>
-				My passion extends into culinary exploration, reveling in both crafting and enjoying new
-				dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to the warmth of
-				Vietnamese Pho, I've explored diverse flavors. Continuously, I seek to master and embrace
-				the art of global culinary traditions.
+				Besides engineering, my passion extends into culinary exploration, reveling in both crafting
+				and enjoying new dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to
+				the warmth of Vietnamese Pho, I've explored diverse flavors. Continuously, I seek to master
+				and embrace the art of global culinary traditions.
 			</p>
 
 			<p>
@@ -61,9 +61,7 @@
 		</div>
 		<div class="grid-item">
 			<Icon icon="mdi:linkedin" style="font-size: 28px; color: #3D6CB9" />
-			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank">
-				senghorn
-			</a>
+			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank"> senghorn </a>
 		</div>
 	</div>
 </div>
@@ -87,7 +85,6 @@
 	}
 	.name {
 		color: var(--accent-color);
-
 	}
 
 	.highlight {
