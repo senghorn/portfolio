@@ -12,7 +12,7 @@
 </script>
 
 <div class="main">
-	<h1>
+	<h1 class="text-md lg:text-2xl font-bold">
 		<span
 			tabindex="0"
 			role="button"
@@ -146,10 +146,6 @@
 
 		p {
 			font-size: 16px;
-		}
-
-		h1 {
-			font-size: 24px;
 		}
 	}
 </style>

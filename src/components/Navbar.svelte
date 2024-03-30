@@ -1,4 +1,4 @@
-<nav>
+<nav class="p-1">
 	<ul>
 		<li><a href="/">About</a></li>
 		<li><a href="/work">Work</a></li>
@@ -7,9 +7,6 @@
 </nav>
 
 <style>
-    nav {
-        padding: 1rem;
-    }
 	nav ul {
 		list-style: none;
 		padding: 0;
