@@ -10,7 +10,7 @@ export const getAllBlogs = async () => {
 		const files = await fs.readdir(directoryPath);
 		const blogs = await Promise.all(
 			files
-				.filter((file) => file.endsWith('.md'))
+				.filter((file) => file.endsWith('.svx'))
 				.map(async (file) => {
 					const filePath = path.join(directoryPath, file);
 					const fileContent = await fs.readFile(filePath, 'utf8');
@@ -22,7 +22,7 @@ export const getAllBlogs = async () => {
 						title: data.title,
 						description: data.description,
 						tag: data.tag,
-						slug: file.replace('.md', ''),
+						slug: file.replace('.svx', ''),
 						tagColor: data.tagColor,
 						imageUrl: data.imageUrl,
 						author: data.author,
@@ -41,11 +41,12 @@ export const getAllBlogs = async () => {
 };
 
 export const getBlog = async (slug: string) => {
-	const directoryPath = path.resolve('src', 'resources', 'blogs', slug);
-	try {
-		const files = await fs.readdir(directoryPath);
-	} catch (error){
-		console.error(error);
-		return null;
-	}
-}
+    const directoryPath = path.resolve('src', 'resources', 'blogs', `${slug}.svx`);
+    try {
+        const content = await fs.readFile(directoryPath, 'utf-8');
+        return content;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+};
