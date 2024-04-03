@@ -1,9 +1,13 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<nav>
 		<ul>
-			<li><a href="/">About</a></li>
-			<li><a href="/work">Work</a></li>
-			<li><a href="/blog">Blog</a></li>
+			<li><a href="{base}/">About</a></li>
+			<li><a href="{base}/work">Work</a></li>
+			<li><a href="{base}/blog">Blog</a></li>
 		</ul>
 	</nav>
 </div>
