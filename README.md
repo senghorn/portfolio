@@ -1,22 +1,30 @@
-# create-svelte
+# Portfolio Project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is my personal portfolio project, built to showcase my work ranging from professional engagements to academic achievements and hobbyist endeavors. The project is developed with Svelte and is a reflection of my skills and experiences.
 
-## Creating a project
+## Project Purpose
 
-If you're seeing this, you've probably already done this step. Congrats!
+The purpose of this portfolio is to provide a comprehensive display of my professional, academic, and hobbyist projects. It serves as a central hub for all my noteworthy work and achievements, demonstrating my capabilities and interests.
+
+## Getting Started
+
+This project was bootstrapped with [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte), ensuring a quick and efficient setup process.
+
+### Prerequisites
+
+Before running the project, make sure you have Node.js installed on your system. You can download it from [Node.js official website](https://nodejs.org/).
+
+### Installation
+
+To install the necessary dependencies, run the following command:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm install
 ```
 
-## Developing
+## Development Server
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To start the development server and begin working on the project, run the following command:
 
 ```bash
 npm run dev
@@ -36,3 +44,6 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Contributions
+As this is a personal portfolio project, contributions are not actively sought. However, suggestions and feedback are always welcome.
