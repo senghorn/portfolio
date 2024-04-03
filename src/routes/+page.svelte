@@ -1,32 +1,155 @@
 <script>
-	import Navbar from '$lib/Navbar.svelte';
+	import Icon from '@iconify/svelte';
+
+	let greeting = 'Sur Sdey';
+
+	function showTranslation() {
+		greeting = 'Hello (in Khmer)';
+	}
+	function hideTranslation() {
+		greeting = 'Sur Sdey';
+	}
 </script>
 
-<Navbar />
-
-<div>
-	<h1>🙏 Sour Sdey! I am <span class="name">Seng Rith</span>.</h1>
-	<img src="portrait.jpg" alt="Your Name" />
-	<p>
-		Sour Sdey - Hello in Khmer. I am a Master's student at the University of Utah. I am
-		studying Computer Science with a focus on NLP and Cybersecurity.
-	</p>
+<div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
+	<h1 class="text-md lg:text-2xl font-bold">
+		<span
+			tabindex="0"
+			role="button"
+			on:mouseenter={showTranslation}
+			on:mouseleave={hideTranslation}
+			on:focus={showTranslation}
+			on:blur={hideTranslation}>🙏 {greeting} !</span
+		>
+		<span>
+			I'm <span class="name">Seng Rith</span>.
+		</span>
+	</h1>
+	<div class="body">
+		<div class="container">
+			<p>
+				I am a Master's student at the <span class="highlight">University of Utah</span>. I am
+				studying <span class="brighten">Computer Science</span> with focus on
+				<span class="brighten">AI/ML(NLP, Deep Learning)</span>
+				and <span class="brighten">Cybersecurity</span>. I'm graduating in
+				<span class="highlight">May 2025</span>.
+			</p>
+			<br/>
+			<p>
+				Besides engineering, my passion extends into culinary exploration, reveling in both crafting
+				and enjoying new dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to
+				the warmth of Vietnamese Pho, I've explored diverse flavors. Send me your favorite recipe!
+			</p>
+			<br/>
+			<p>
+				Let's connect and share our stories. I'm always open to new experiences and opportunities.
+			</p>
+		</div>
+		<div class="container">
+			<img src="portrait.jpg" alt="Your Name" />
+		</div>
+	</div>
+	<div class="grid-contact-container">
+		<div class="grid-item">
+			<Icon icon="mdi:github" style="font-size: 28px;" />
+			<a href="https://github.com/senghorn" target="_blank"> senghorn </a>
+		</div>
+		<div class="grid-item">
+			<Icon icon="mdi:email" style="font-size: 28px; color: #00D1FF" />
+			<a href="mailto:sun_rsh@outlook.com" target="_blank"> sun_rsh </a>
+		</div>
+		<div class="grid-item">
+			<Icon icon="mdi:linkedin" style="font-size: 28px; color: #3D6CB9" />
+			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank"> senghorn </a>
+		</div>
+	</div>
 </div>
 
 <style>
 	div {
 		text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
+		max-width: 1000px;
+		margin: auto;
 	}
 	img {
 		max-width: 350px;
-		max-height: 450px;
-		border-radius: 5%;
-        margin: 1rem;
+		max-height: 550px;
+		border-radius: 2%;
+		margin: auto;
 	}
-    .name {
-        color: #FFD700;
-        text-decoration: underline;
-    }
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.name {
+		color: var(--accent-color);
+	}
+
+	.highlight {
+		color: var(--primary-color);
+		font: bold;
+	}
+
+	.brighten {
+		color: var(--font-color);
+	}
+
+	p {
+		font-size: 20px;
+		color: var(--secondary-color);
+	}
+
+	.body {
+		display: flex;
+		flex-direction: row;
+		place-items: center;
+		padding: 2rem;
+		gap: 4rem;
+	}
+	.grid-contact-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		border: 1px solid var(--accent-color);
+		border-radius: 1rem;
+		padding: 1rem;
+		margin-top: 1rem;
+	}
+	.grid-item {
+		display: flex;
+		text-align: center;
+	}
+
+	/* Style for anchoring tags in contact-list */
+	.grid-item a {
+		color: var(--font-color);
+		font-size: 20px;
+	}
+	@media (max-width: 500px) {
+		img {
+			max-width: 200px;
+			max-height: 400px;
+			border-radius: 2%;
+			margin: auto;
+		}
+
+	}
+	@media (max-width: 800px) {
+		.body {
+			flex-direction: column;
+		}
+		img {
+			max-width: 250px;
+			max-height: 400px;
+			border-radius: 2%;
+			margin: auto;
+		}
+		.grid-contact-container {
+			grid-template-columns: auto auto;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
 </style>

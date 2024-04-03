@@ -1,0 +1,68 @@
+---
+title: Devin - First AI Software Engineer
+date: 2024-03-23
+description: Since the release of ChatGPT, AI has been capturing attention across various industries. Cognition lab has recently released a new AI model called Devin AI, which they called the first AI Software Engineer.
+categories:
+  - AI
+  - Software Engineering
+tag: Generative AI
+tagColor: blue
+imageUrl: dvin-ai.png
+author: Seng Rith
+---
+<div>
+
+<h2>Introduction</h2>
+
+<span>
+Spring break had just ended when I began receiving emails from recruiters about my applications for Software Engineering Internship roles.
+As a Master’s student in Computer Science, this week has been unparalleled in excitement.
+I quickly looked through the congratulatory emails for being selected for the final interview stage, my adrenaline soaring. 
+Following this excitement, I started to scroll through X (formerly known as Twitter), catching up on the news I missed last week while on spring break.
+This news article (or Tweet) caught my attention the most: <span class="italic bold">'Introducing our new AI Software Engineer - Devin.' </span>The choice of 
+this headline by the editor (or the team) was exceptionally clever, effectively capturing the attention of Software Engineers.
+</span>
+<br/>
+<br/>
+<div class="wrapper">
+<img class="max-w-[220px] float-left mr-6" src="/dvin-ai.png" alt="Devin - AI Software Engineer">
+</div>
+
+<h2>Discovering Devin AI</h2>
+As my vision cleared and the caffeine from my morning latte began to take effect, I started to sift through the threads about the so-called 'AI Software Engineer,' 
+watching demos of its capabilities. The AI model lived up to the article's impressive title. It became crystal clear to me that this AI could perform the job I had 
+envisioned for my future. A wave of frustration washed over me as myriad thoughts raced through my mind. *Should I delve into DevOps, or perhaps pivot to concentrating 
+on cybersecurity?* These questions echoed in my thoughts. The more I read, the greater my frustration grew.
+
+
+<h2>Reflection</h2>
+<p>
+After giving myself some time to digest the news, I gradually calmed down. The initial wave of frustration faded away, making room for clarity and a more analytical approach to the situation. 
+I began to question the true capabilities of this AI engineer: *What exactly does it do? Can it really replace us, the human engineers?* Reflecting on my own experiences with ChatGPT, 
+I started to see things in a new light. It dawned on me that this technology is not about replacement but enhancement. ChatGPT, for instance, had made my tasks more manageable and my workflow more efficient. 
+I concluded that AI, including this so-called 'AI Software Engineer,' would't replace us but would instead amplify our productivity, enabling us to achieve more.
+This Devin AI seems more intimidating than any other ones we've seen. Seeing all the demos, I felt ill for the bit and got scared. However, I strongly believe this is going to be a 
+code generative model that engineers will use instead of ChatGPT or other LLMs.
+This is how I interpret it given my 1 year experience of using GPT-3.5 and GPT4.0 to help me as a Software Engineer.
+</p>
+<br/>
+<h2>Implications of Devin AI</h2>
+<li>First of all, engineers love to automate tasks. This should be seen as an exciting technology rather than a daunting one to engineers.</li>
+<li>The integration of real-time feedback and iteration cycles within the Devin AI platform allows for more efficient debugging and optimization processes. 
+This means not only can I test code directly, but I can also refine and adjust it based on performance metrics and suggestions provided by the AI itself,
+streamlining the development process.</li>
+<li>Devin AI's potential to understand context and project requirements more deeply could lead to more accurate and relevant code generation. This would save significant time by reducing the need for extensive searches for
+ snippets or solutions online, as the AI could tailor its outputs to fit the specific needs of my project.</li>
+<li>Lastly, the AI’s continuous learning capability means that it could become more attuned to my coding style and preferences over time. This personalization could improve the quality and consistency of the code it generates,
+ making it an indispensable tool for software development projects.</li>
+<li>Last but not least, human engineers will be sitting at the front passenger seat telling Devin which turn it should make. What I am trying to say is, human engineers can still do far better long-time planning than AI.
+ We know what we want and need. Sure, non-engineers can tell Devin what to do. But, complex systems still require engineers to design and this is where human engineers shine.</li>
+<br/>
+<h2>Conclusion</h2>
+<p>AI has come a long way. Every piece of technology has some sort of AI integrated nowadays. To take full advantages of this, engineers must learn to write concisely and meaningfully. This is one of the reasons that I 
+decided to write this article. Coding will be less of a requirement in the future, but engineering skills will remain very important until humans don’t have any problems they need to solve anymore.</p>
+<br/>
+<br/>
+- <span class="italic ml-4 bold text-orange-500">Seng Rith</span>, Software Engineer
+
+</div>

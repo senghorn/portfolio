@@ -1,10 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --background-color: #222832;
-    --font-color: white;
+    --font-color: #EEEEEE;
+    --accent-color: #ffd700;
+    --primary-color: #FF6B6B;
+    --secondary-color: #C7C8CC;
+    --light-red-color: #bb979b;
+    --light-black-color: #31363F;
 }
-  
+
 body {
     background-color: var(--background-color);
     color: var(--font-color);
+    font-family: 'Fira Mono', monospace;
 }
-  
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
