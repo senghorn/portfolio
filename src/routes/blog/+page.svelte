@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '../../components/Blog/Card.svelte';
 	export let data;
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -30,13 +31,13 @@
 	<div class="container">
 		{#each data.blogs as blog}
 			<Card
-				cardImageUrl={blog.imageUrl}
+				cardImageUrl="{base}\{blog.imageUrl}"
 				altText="Nature image"
 				tagColor={blog.tagColor}
 				tagName={blog.tag}
 				title={blog.title}
 				description={blog.description}
-				userImageUrl="seng.jpg"
+				userImageUrl="{base}\seng.jpg"
 				userName={blog.author}
 				timeAgo={blog.timeAgo}
 				slug={blog.slug}

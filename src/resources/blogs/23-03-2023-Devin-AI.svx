@@ -25,7 +25,7 @@ this headline by the editor (or the team) was exceptionally clever, effectively 
 <br/>
 <br/>
 <div class="wrapper">
-<img class="max-w-[220px] float-left mr-6" src="/dvin-ai.png" alt="Devin - AI Software Engineer">
+
 </div>
 
 <h2>Discovering Devin AI</h2>
