@@ -34,7 +34,7 @@
 				and <span class="brighten">Cybersecurity</span>. I'm graduating in
 				<span class="highlight">May 2025</span>.
 			</p>
-
+			<br/>
 			<p>
 				Besides engineering, my passion extends into culinary exploration, reveling in both crafting
 				and enjoying new dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to
@@ -125,7 +125,15 @@
 		color: var(--font-color);
 		font-size: 20px;
 	}
+	@media (max-width: 500px) {
+		img {
+			max-width: 200px;
+			max-height: 400px;
+			border-radius: 2%;
+			margin: auto;
+		}
 
+	}
 	@media (max-width: 800px) {
 		.body {
 			flex-direction: column;
