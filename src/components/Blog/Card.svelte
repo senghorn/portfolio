@@ -10,10 +10,6 @@
 	export let userName = 'Jane Doe';
 	export let timeAgo = '2h ago';
 	export let slug = "";
-
-	function navigateToBlogPost() {
-		window.location.href = `{base}/blog/${slug}`;
-	}
 </script>
 
 
@@ -23,7 +19,7 @@
 	</div>
 	<div class="card__body">
 		<span class={`tag tag-${tagColor}`}>{tagName}</span>
-		<h4><a href="/blog/{slug}">{title}</a></h4>
+		<h4><a href="{base}/blog/{slug}">{title}</a></h4>
 		<p>{description}</p>
 	</div>
 	<div class="card__footer">
