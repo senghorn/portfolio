@@ -19,7 +19,7 @@
 	</div>
 	<div class="card__body">
 		<span class={`tag tag-${tagColor}`}>{tagName}</span>
-		<h4><a href="{base}/blog/{slug}">{title}</a></h4>
+		<h4><a href="blog/{slug}">{title}</a></h4>
 		<p>{description}</p>
 	</div>
 	<div class="card__footer">
