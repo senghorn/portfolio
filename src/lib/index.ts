@@ -44,7 +44,8 @@ export const getBlog = async (slug: string) => {
     const directoryPath = path.resolve('src', 'resources', 'blogs', `${slug}.svx`);
     try {
         const content = await fs.readFile(directoryPath, 'utf-8');
-        return content;
+        const { content: blogContent } = matter(content);
+        return blogContent;
     } catch (error) {
         console.error(error);
         return null;

@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
-<div class="main">
+<div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<h1>📝 Blog</h1>
 	<br />
 	<div>
@@ -46,14 +46,6 @@
 </div>
 
 <style>
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-		padding: 0;
-		margin: 0;	
-	}
-
 	.container {
 		display: flex;
 		flex-wrap: wrap;
@@ -61,10 +53,5 @@
 		max-width: 1200px;
 		margin-block: 2rem;
 		gap: 2rem;
-	}
-
-	div {
-		max-width: 1200px;
-		margin: 0 auto;
 	}
 </style>

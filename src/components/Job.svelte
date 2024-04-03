@@ -9,7 +9,7 @@
 		<p>{job.jobPeriod}</p>
 	</div>
 	<div class="job-description">
-		<h1>{job.companyName}</h1>
+		<h3>{job.companyName}</h3>
 		<p class="tech-list">{job.techList}</p>
 		{#each job.jobDescription as description}
 			<li>{@html description}</li>
@@ -64,5 +64,6 @@
 		flex-direction: column;
 		padding: 1rem;
 		border: 4px solid var(--primary-color);
+		border-radius: 1rem;
 	}
 </style>

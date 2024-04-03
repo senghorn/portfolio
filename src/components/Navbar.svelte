@@ -1,12 +1,18 @@
-<nav class="p-1">
-	<ul>
-		<li><a href="/">About</a></li>
-		<li><a href="/work">Work</a></li>
-		<li><a href="/blog">Blog</a></li>
-	</ul>
-</nav>
+<div class="mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
+	<nav>
+		<ul>
+			<li><a href="/">About</a></li>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+	</nav>
+</div>
 
 <style>
+	nav {
+		padding: 1rem;
+		border-bottom: 1px solid white;
+	}
 	nav ul {
 		list-style: none;
 		padding: 0;
@@ -15,9 +21,15 @@
 		display: inline;
 		margin-right: 1rem;
 	}
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-    }
+
+	nav li::after {
+		content: '|';
+		margin-left: 1rem;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-size: 24px;
+	}
 </style>

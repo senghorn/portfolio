@@ -21,7 +21,7 @@
 			techList: 'Java, Selenium, MySQL, HTML, CSS, JavaScript, Git, Docker, Linux, Windows',
 			jobDescription: [
 				'Created, maintained, and updated existing Java Selenium Test applications',
-				'Refined Web Application for test result tracker which improved data storage and retrieval using MySQL',
+				'Refined Web Application for test result tracker which improved data storage and retrieval using MySQL'
 			]
 		}
 	];
@@ -30,7 +30,7 @@
 		{
 			companyName: 'CareCoord',
 			companyLogo: 'carecoord.png',
-			jobPeriod: 'August 2022-May 2023',
+			jobPeriod: 'Aug 2022-May 2023',
 			techList: 'ReactNative, Node.js, Express.js, MySQL, Docker',
 			jobDescription: [
 				'Built real-time group messaging feature',
@@ -46,32 +46,28 @@
 	<meta name="description" content="Showcasing my coding works both professional and academic." />
 </svelte:head>
 
-<div class="main">
+<div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<h1>🧑🏻‍💻 Professional</h1>
 	<div class="job-list">
 		{#each jobs as job}
-			<Job job={job}/>
+			<Job {job} />
 		{/each}
 	</div>
 	<h1>👷🏻‍♂️ Project</h1>
 	<div class="job-list">
 		{#each projects as proj}
-			<Job job={proj}/>
+			<Job job={proj} />
 		{/each}
 	</div>
 </div>
 
 <style>
-	div {
-		max-width: 800px;
-		margin: 0 auto;
-	}
 	.main {
 		margin-bottom: 8rem;
 	}
 	.job-list {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 3rem;
 	}
-
 </style>

@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div class="main">
+<div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<h1 class="text-md lg:text-2xl font-bold">
 		<span
 			tabindex="0"
@@ -38,10 +38,9 @@
 			<p>
 				Besides engineering, my passion extends into culinary exploration, reveling in both crafting
 				and enjoying new dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to
-				the warmth of Vietnamese Pho, I've explored diverse flavors. Continuously, I seek to master
-				and embrace the art of global culinary traditions.
+				the warmth of Vietnamese Pho, I've explored diverse flavors. Send me your favorite recipe!
 			</p>
-
+			<br/>
 			<p>
 				Let's connect and share our stories. I'm always open to new experiences and opportunities.
 			</p>
@@ -116,6 +115,7 @@
 		display: grid;
 		grid-template-columns: auto auto auto;
 		border: 4px solid var(--accent-color);
+		border-radius: 1rem;
 		padding: 1rem;
 		margin-top: 1rem;
 	}
