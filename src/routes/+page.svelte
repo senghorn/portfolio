@@ -100,10 +100,6 @@
 		color: var(--secondary-color);
 	}
 
-	.main {
-		margin-bottom: 8rem;
-	}
-
 	.body {
 		display: flex;
 		flex-direction: row;
@@ -114,7 +110,7 @@
 	.grid-contact-container {
 		display: grid;
 		grid-template-columns: auto auto auto;
-		border: 4px solid var(--accent-color);
+		border: 1px solid var(--accent-color);
 		border-radius: 1rem;
 		padding: 1rem;
 		margin-top: 1rem;

@@ -63,7 +63,7 @@
 		flex: 1;
 		flex-direction: column;
 		padding: 1rem;
-		border: 4px solid var(--primary-color);
+		border: 1px solid var(--primary-color);
 		border-radius: 1rem;
 	}
 </style>
