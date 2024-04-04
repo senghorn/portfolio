@@ -7,9 +7,9 @@
 </nav>
 
 <style>
-    nav {
-        padding: 1rem;
-    }
+	nav {
+		padding: 1rem;
+	}
 	nav ul {
 		list-style: none;
 		padding: 0;
@@ -18,10 +18,10 @@
 		display: inline;
 		margin-right: 1rem;
 	}
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-        font-family: 'Open Sans', sans-serif;
-    }
+	a {
+		color: white;
+		text-decoration: none;
+		font-size: 24px;
+		font-family: 'Open Sans', sans-serif;
+	}
 </style>

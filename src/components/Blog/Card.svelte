@@ -1,5 +1,4 @@
 <script>
-	import { base } from '$app/paths';
 	export let cardImageUrl = 'https://source.unsplash.com/600x400/?computer';
 	export let altText = 'card image';
 	export let tagColor = 'blue';
