@@ -21,9 +21,8 @@
 
 <div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<h1>📝 Blog</h1>
-	<br />
 	<div>
-		<p>
+		<p class="border-l-[3px] p-4 text-sm">
 			Welcome to my blog! Here you will find a collection of my thoughts, ideas, and experiences. I
 			hope you enjoy reading them as much as I enjoyed writing them.
 		</p>

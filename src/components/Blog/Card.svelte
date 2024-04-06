@@ -19,8 +19,8 @@
 	</div>
 	<div class="card__body">
 		<span class={`tag tag-${tagColor}`}>{tagName}</span>
-		<h4><a href="{base}/blog/{slug}">{title}</a></h4>
-		<p>{description}</p>
+		<h3><a href="{base}/blog/{slug}">{title}</a></h3>
+		<p class="text-sm text-slate-400">{description}</p>
 	</div>
 	<div class="card__footer">
 		<div class="user">
@@ -66,13 +66,13 @@
 		gap: 0.5rem;
 	}
 
-	.card__body h4 > a {
+	.card__body h3 > a {
 		text-decoration: none;
 		font-size: inherit;
 		color: inherit;
 	}
 
-	.card__body h4 > a:hover {
+	.card__body h3 > a:hover {
 		text-decoration: underline;
 	}
 
@@ -105,8 +105,7 @@
 		color: #fafafa;
 	}
 
-	.card__body h4 {
-		font-size: 1.5rem;
+	.card__body h3 {
 		text-transform: capitalize;
 	}
 

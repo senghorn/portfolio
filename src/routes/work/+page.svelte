@@ -7,7 +7,7 @@
 			companyName: 'Qnergy Inc.',
 			companyLogo: 'qnergy-logo.png',
 			jobPeriod: 'June 2023-Feb 2024',
-			techList: 'React.js, Node.js, Express.js, MongoDB, Linux',
+			techList: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Linux'],
 			jobDescription: [
 				'Built email notification feature to alert user about their subscription',
 				'Developed test automation project using Playwright framework',
@@ -18,7 +18,18 @@
 			companyName: 'University of Utah',
 			companyLogo: 'u-logo.jpg',
 			jobPeriod: 'May 2022-Aug 2023',
-			techList: 'Java, Selenium, MySQL, HTML, CSS, JavaScript, Git, Docker, Linux, Windows',
+			techList: [
+				'Java',
+				'Selenium',
+				'MySQL',
+				'HTML',
+				'CSS',
+				'JavaScript',
+				'Git',
+				'Docker',
+				'Linux',
+				'Windows'
+			],
 			jobDescription: [
 				'Created, maintained, and updated existing Java Selenium Test applications',
 				'Refined Web Application for test result tracker which improved data storage and retrieval using MySQL'
@@ -31,7 +42,7 @@
 			companyName: 'CareCoord',
 			companyLogo: 'carecoord.png',
 			jobPeriod: 'Aug 2022-May 2023',
-			techList: 'ReactNative, Node.js, Express.js, MySQL, Docker',
+			techList: ['ReactNative', 'Node.js', 'Express.js', 'MySQL', 'Docker'],
 			jobDescription: [
 				'Built real-time group messaging feature',
 				'Implemented user authentication flow in both frontend and backend',

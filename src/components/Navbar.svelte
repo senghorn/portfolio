@@ -29,11 +29,12 @@
 	nav li::after {
 		content: '|';
 		margin-left: 1rem;
+		color: var(--accent-color);
 	}
 
 	a {
 		color: white;
 		text-decoration: none;
-		font-size: 24px;
+		font-size: 1rem;
 	}
 </style>

@@ -1,26 +1,10 @@
 <script>
 	import Icon from '@iconify/svelte';
-
-	let greeting = 'Sur Sdey';
-
-	function showTranslation() {
-		greeting = 'Hello (in Khmer)';
-	}
-	function hideTranslation() {
-		greeting = 'Sur Sdey';
-	}
 </script>
 
 <div class="p-8 mx-auto w-full max-w-screen-lg sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl">
 	<h1 class="text-md lg:text-2xl font-bold">
-		<span
-			tabindex="0"
-			role="button"
-			on:mouseenter={showTranslation}
-			on:mouseleave={hideTranslation}
-			on:focus={showTranslation}
-			on:blur={hideTranslation}>🙏 {greeting} !</span
-		>
+		<span>Welcome! 🙏 </span>
 		<span>
 			I'm <span class="name">Seng Rith</span>.
 		</span>
@@ -34,13 +18,13 @@
 				and <span class="brighten">Cybersecurity</span>. I'm graduating in
 				<span class="highlight">May 2025</span>.
 			</p>
-			<br/>
+			<br />
 			<p>
 				Besides engineering, my passion extends into culinary exploration, reveling in both crafting
 				and enjoying new dishes. From the zest of Birria Tacos and the freshness of Papaya Salad to
 				the warmth of Vietnamese Pho, I've explored diverse flavors. Send me your favorite recipe!
 			</p>
-			<br/>
+			<br />
 			<p>
 				Let's connect and share our stories. I'm always open to new experiences and opportunities.
 			</p>
@@ -51,16 +35,19 @@
 	</div>
 	<div class="grid-contact-container">
 		<div class="grid-item">
-			<Icon icon="mdi:github" style="font-size: 28px;" />
-			<a href="https://github.com/senghorn" target="_blank"> senghorn </a>
+			<a href="https://github.com/senghorn" target="_blank">
+				<Icon icon="mdi:github" style="font-size: 32px;" />
+			</a>
 		</div>
 		<div class="grid-item">
-			<Icon icon="mdi:email" style="font-size: 28px; color: #00D1FF" />
-			<a href="mailto:sun_rsh@outlook.com" target="_blank"> sun_rsh </a>
+			<a href="mailto:sun_rsh@outlook.com" target="_blank">
+				<Icon icon="mdi:email" style="font-size: 32px; color: #00D1FF" />
+			</a>
 		</div>
 		<div class="grid-item">
-			<Icon icon="mdi:linkedin" style="font-size: 28px; color: #3D6CB9" />
-			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank"> senghorn </a>
+			<a href="https://www.linkedin.com/in/seng-horn-rith-550991187/" target="_blank">
+				<Icon icon="mdi:linkedin" style="font-size: 32px; color: #3D6CB9" />
+			</a>
 		</div>
 	</div>
 </div>
@@ -96,7 +83,6 @@
 	}
 
 	p {
-		font-size: 20px;
 		color: var(--secondary-color);
 	}
 
@@ -108,17 +94,15 @@
 		gap: 4rem;
 	}
 	.grid-contact-container {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		border: 1px solid var(--accent-color);
-		border-radius: 1rem;
-		padding: 1rem;
-		margin-top: 1rem;
-	}
-	.grid-item {
 		display: flex;
-		text-align: center;
+		flex-direction: row;
+		width: fit-content;
+		border-radius: 1rem;
+		padding: 0.5rem;
+		gap: 1rem;
+		border: 1px solid var(--accent-color);
 	}
+
 
 	/* Style for anchoring tags in contact-list */
 	.grid-item a {
@@ -132,7 +116,6 @@
 			border-radius: 2%;
 			margin: auto;
 		}
-
 	}
 	@media (max-width: 800px) {
 		.body {
@@ -146,10 +129,6 @@
 		}
 		.grid-contact-container {
 			grid-template-columns: auto auto;
-		}
-
-		p {
-			font-size: 16px;
 		}
 	}
 </style>

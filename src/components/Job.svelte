@@ -10,7 +10,15 @@
 	</div>
 	<div class="job-description">
 		<h3>{job.companyName}</h3>
-		<p class="tech-list">{job.techList}</p>
+		<div class="p-1">
+			{#each job.techList as tech}
+				<span
+					class="inline-flex items-center m-1 px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-xs text-gray-600"
+				>
+					<span class="ml-1"> {tech} </span>
+				</span>
+			{/each}
+		</div>
 		{#each job.jobDescription as description}
 			<li>{@html description}</li>
 		{/each}
@@ -31,14 +39,6 @@
 	.job {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.tech-list {
-		background-color: var(--light-red-color);
-		border-radius: 1rem;
-		padding: 0 8px;
-		margin: 0 0 1rem 0;
-		width: fit-content;
 	}
 
 	.job-timeline {
@@ -63,7 +63,7 @@
 		flex: 1;
 		flex-direction: column;
 		padding: 1rem;
-		border: 1px solid var(--primary-color);
+		border: 1px solid var(--accent-color);
 		border-radius: 1rem;
 	}
 </style>
